@@ -1,0 +1,156 @@
+body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    background: white;
+}
+
+#ajax-spinner {
+    margin: 15px 0 0 15px;
+    padding: 13px;
+    background: white url('../images/spinner.gif') no-repeat 50% 50%;
+    font-size: 0;
+    z-index: 123456;
+    display: none;
+}
+
+div.flash {
+    color: black;
+    background: #FFF9D7;
+    border: 1px solid #E2C822;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+form th, form td {
+    vertical-align: top;
+    font-weight: normal;
+}
+
+form th {
+    text-align: right;
+}
+
+form .required label {
+    font-weight: bold;
+}
+
+form .error {
+    color: #D00;
+    font-weight: bold;
+}
+
+#head {
+    background-color: #8BC34A;
+    color: #fff;
+}
+
+#head h1 {
+    display: inline-block;
+    margin: 10px 0;
+    color: #fff;
+}
+
+#head h1 sup .small {
+    font-size: 0.6em;
+    color: #fff;
+}
+
+#head a {
+    color: #fff;
+}
+
+#head a:hover {
+    text-decoration: none;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+.products-list {
+
+}
+
+.products-item {
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.products-item h3 {
+    margin: 0;
+}
+
+.products-item p {
+    margin: 0;
+}
+
+#content {
+    margin-bottom: 50px;
+}
+
+.p-vision {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.banner-vision {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.banner-wood {
+    padding: 20px 0;
+    background: url('./texture/purty_wood.jpg') repeat;
+    color: #000;
+}
+
+.award-bange {
+    display: inline-block;
+    background-color: #808080;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0.3em 1em;
+    min-width: 5em;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.award-bange-verified {
+    background-color: #8BC34A;
+}
+
+.no-last-s-margin {
+    margin-bottom: -50px;
+}
+
+.eu-cookies {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #222;
+    z-index: 10000;
+    padding: 5px 0;
+    font-size: 12.8px;
+}
+
+.eu-cookies a, .eu-cookies a:hover {
+    color: #428bca;
+}

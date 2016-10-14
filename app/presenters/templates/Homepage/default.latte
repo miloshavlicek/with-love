@@ -1,0 +1,74 @@
+{block content}
+<div class="banner-wood banner-vision">
+    <div class="container">
+        <p class="p-vision">
+            <i class="fa fa-gratipay" aria-hidden="false"></i>&nbsp; Podporujme produkty vytvořené s láskou!
+        </p>
+        <p>
+            Proč kupovat potraviny plné chemikálií? ...oblečení spojené s dětskou prací?
+            Proč dobrovolně nechávat ohrožovat své zdraví a kvalitu životního prostředí?
+            Pojďme to změnit! Teď, hned! Připojte se k nám a oceňme firmy pro které zisk není vše.
+        </p>
+        <p>
+            <a n:href="About:" class="btn btn-default btn-xs">{_general.moreInfo|firstUpper} &nbsp;<i class="fa fa-arrow-right" aria-hidden="false"></i></a>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <h2>{_general.madeWith} <i class="fa fa-heart" aria-hidden="false"></i></h2>
+    <a n:href="Criteria:" class="btn btn-default btn-xs">
+        {_pages.criteria.title}
+    </a>
+
+    {include '../_part/products-list.latte'}
+
+    <h2>{_general.premiumQuality} <i class="fa fa-star" aria-hidden="false"></i></h2>
+    <a n:href="Criteria:" class="btn btn-default btn-xs">
+        {_pages.criteria.title}
+    </a>
+
+    {include '../_part/products-list.latte'}
+
+    <hr />
+
+    <a n:href="Company:list" class="btn btn-default btn-xs">
+        {_pages.companyList.title}
+    </a>
+
+    <a n:href="Product:list" class="btn btn-default btn-xs">
+        {_pages.productList.title}
+    </a>
+</div>
+
+<div class="banner-wood no-last-s-margin" style="margin-top:40px;">
+    <div class="container">
+        <h2><i class="fa fa-smile-o" aria-hidden="false"></i> Máme rádi...</h2>
+
+        <div class="products-list" n:inner-foreach="$recommended as $recommendedOne">
+            {if $iterator->counter % 3 === 1}<div class="row">{/if}
+                <div class="col-md-4">
+                    <div class="products-item">
+                        <h3>{$recommendedOne->title}</h3>
+                        <p>{$recommendedOne->description}</p>
+                        <br />
+                        <div class="text-center">
+                            <a href="{$recommendedOne->website}" class="btn btn-default btn-sm">
+                                Přejít na web &nbsp;<i class="fa fa-arrow-right" aria-hidden="false"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {if $iterator->counter % 3 === 0 || $iterator->last}</div>{/if}
+        </div>
+    </div>
+</div>
+{/block}
+
+{block scripts}
+{include parent}
+
+{/block}
+
+{block head}
+
+{/block}

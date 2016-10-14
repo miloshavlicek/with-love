@@ -1,0 +1,7 @@
+{block content}
+<div class="container">
+    <h2>{$product->name}</h2>
+    <div n:if="$product->website"><i class="fa fa-globe"></i> Web: <a href="{$product->website}">{$product->website}</a></div>
+    <div n:if="$product->email"><i class="fa fa-envelope"></i> Email: <a href="{$product->email}">{$product->email}</a></div>
+    <div n:if="$product->facebookPage"><i class="fa fa-facebook"></i> Facebook: <a href="{$product->facebookPage}">{$product->facebookPage}</a></div>
+</div>

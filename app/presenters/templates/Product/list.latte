@@ -1,0 +1,10 @@
+{block content}
+<div class="container">
+    <h2>{_pages.productList.title}</h2>
+
+    {foreach $products as $product}
+        {if $iterator->first}<ul>{/if}
+            <li><a n:href="detail?id=$product->id">{$product->name}</a></li>
+        {if $iterator->last}</ul>{/if}
+    {/foreach}
+</div>
