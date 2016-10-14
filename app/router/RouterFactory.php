@@ -16,7 +16,7 @@ class RouterFactory {
     public static function createRouter() {
         $router = new RouteList;
 
-        $ssl = in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1']) ? Route::SECURED : FALSE;
+        $ssl = in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1']) ? FALSE : Route::SECURED;
 
         $router[] = new Route('[<locale=cz cz>/]o-nas', 'About:default', $ssl);
         $router[] = new Route('[<locale=en>/]about-us', 'About:default', $ssl);
